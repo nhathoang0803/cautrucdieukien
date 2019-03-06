@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" min=1  max=12 id="so">
+<p id="kq"></p>
+<button onclick="tinh();">Tính số ngày</button>
+<script>
+    function tinh(){
+        var nhap = parseInt(document.getElementById("so").value);
+        switch (nhap){
+            case 1:document.getElementById("kq").innerHTML = "Tháng 1 có 31 ngày";break;
+            case 3:document.getElementById("kq").innerHTML = "Tháng 3 có 31 ngày";break;
+            case 5:document.getElementById("kq").innerHTML = "Tháng 5 có 31 ngày";break;
+            case 7:document.getElementById("kq").innerHTML = "Tháng 7 có 31 ngày";break;
+            case 8:document.getElementById("kq").innerHTML = "Tháng 8 có 31 ngày";break;
+            case 10:document.getElementById("kq").innerHTML = "Tháng 10 có 31 ngày";break;
+            case 12:document.getElementById("kq").innerHTML = "Tháng 12 có 31 ngày";break;
+            case 4:document.getElementById("kq").innerHTML = "Tháng 4 có 30 ngày";break;
+            case 6:document.getElementById("kq").innerHTML = "Tháng 6 có 30 ngày";break;
+            case 9:document.getElementById("kq").innerHTML = "Tháng 9 có 30 ngày";break;
+            case 11:document.getElementById("kq").innerHTML = "Tháng 11 có 30 ngày";break;
+            case 2:document.getElementById("kq").innerHTML = "Tháng 2 có 28 ngày hoặc 29 ngày";break;
+        }
+    }
+</script>
+</body>
+</html>
